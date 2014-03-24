@@ -118,7 +118,7 @@ c.IPythonQtConsoleApp.confirm_exit = False
 #             completion by pressing Return.
 # 'ncurses' : Show the completion as a text list which is navigable by
 #             `tab` and arrow keys.
-# c.IPythonWidget.gui_completion = 'ncurses'
+c.IPythonWidget.gui_completion = 'droplist'
 
 # Whether to process ANSI escape codes.
 # c.IPythonWidget.ansi_codes = True
@@ -156,7 +156,7 @@ c.IPythonQtConsoleApp.confirm_exit = False
 
 # If not empty, use this Pygments style for syntax highlighting. Otherwise, the
 # style sheet is queried for Pygments style information.
-# c.IPythonWidget.syntax_style = u''
+c.IPythonWidget.syntax_style = u'monokai'
 
 # The font family to use for the console. On OSX this defaults to Monaco, on
 # Windows the default is Consolas with fallback of Courier, and on other
@@ -235,7 +235,7 @@ c.IPythonWidget.banner = u''
 
 # Pre-load matplotlib and numpy for interactive use, selecting a particular
 # matplotlib backend and loop integration.
-# c.IPKernelApp.pylab = None
+c.IPKernelApp.pylab = 'auto'
 
 # Create a massive crash report when IPython encounters what may be an internal
 # error.  The default is to append a short message to the usual traceback
